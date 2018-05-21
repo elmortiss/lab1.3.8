@@ -1,0 +1,76 @@
+body{
+	background-image:url("space.jpg");
+	box-sizing:border-box;
+}
+
+
+.sun{
+	width:150px;
+	height:150px;
+	background-color:yellow;
+	border-radius:50%;
+	position:absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	margin:auto;
+	z-index:999;
+}
+
+.sun:hover{
+	 transform: scale(1.2);
+	 transition-duration:500ms;
+}
+.orbit{
+	width:500px;
+	height:500px;
+	border:2px solid white;
+	border-radius:50%;
+	position:absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	margin:auto;
+}
+
+.container{
+	width:450px;
+	height:450px;
+	border-radius:50%;
+	position:absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	margin:auto;
+	animation-name: spinningMars;
+	animation-duration: 6s;
+	animation-timing-function: linear;
+	animation-iteration-count:infinite;
+}
+
+.container:hover{
+	animation-play-state:paused;
+}
+
+.mars{
+	width:100px;
+	height:100px;
+	background-color:red;
+	border-radius:50%;
+
+}
+
+.mars:hover{
+	 transform: scale(1.2);
+	 transition-duration:500ms;
+}
+
+@keyframes spinningMars{
+	 from { transform: rotate (0deg); }
+
+           to { transform: rotate(360deg); } 
+	
+}
